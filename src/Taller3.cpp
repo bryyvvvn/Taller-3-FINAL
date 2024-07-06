@@ -165,8 +165,8 @@ void leerArchivoYAgregarTransacciones(const string& nombreArchivo, HistorialTran
 
         
         Transaccion transaccion(id, cuentaOrigen, cuentaDestino, monto, ubicacion, fechaYHora);
-        historial.añadirTransaccion(transaccion);
-        detectorFraude.añadirTransaccion(transaccion);
+        historial.anadirTransaccion(transaccion);
+        detectorFraude.anadirTransaccion(transaccion);
         
     }
 
@@ -242,8 +242,8 @@ void agregarTransacciones(HistorialTransacciones historial,DetectorDeFraude dete
         cin>>ubicacion;
         time_t hora = time(nullptr);
         Transaccion transaccion(id, origen, destino, monto, ubicacion, hora);
-        historial.añadirTransaccion(transaccion);
-        detectorFraude.añadirTransaccion(transaccion);
+        historial.anadirTransaccion(transaccion);
+        detectorFraude.anadirTransaccion(transaccion);
         cout<<"Transacción con ID: "<<id<<" agregada correctamente"<<endl;
         actualizarArchivo(historial);
 }
@@ -337,7 +337,7 @@ void modificarTransacciones(HistorialTransacciones historial,DetectorDeFraude de
         break;
     }
     detectorFraude.eliminarTransaccion(idBuscada);
-    detectorFraude.añadirTransaccion(*transaccionElegida);
+    detectorFraude.anadirTransaccion(*transaccionElegida);
     actualizarArchivo(historial);
 }
 //OPCION 3.1

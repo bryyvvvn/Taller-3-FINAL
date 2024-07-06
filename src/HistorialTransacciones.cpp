@@ -111,7 +111,7 @@ void HistorialTransacciones::obtenerTransaccionesRecursivo(Nodo* nodo, std::vect
         obtenerTransaccionesRecursivo(nodo->der, transacciones);
     }
 }
-void HistorialTransacciones::añadirTransaccion(Transaccion t){
+void HistorialTransacciones::anadirTransaccion(Transaccion t){
     raiz= insertar(raiz,t);
     
 }  

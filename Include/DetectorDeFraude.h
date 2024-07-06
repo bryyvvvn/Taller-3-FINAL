@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "transaccion.h"
+#include "Transaccion.h"
 #include "HistorialTransacciones.h"
 
 class DetectorDeFraude{
@@ -30,7 +30,7 @@ class DetectorDeFraude{
         bool ubicacionesDistintasEnCortoTiempo(Nodo* nodo, string& ultimaCuenta, string& ultimaUbicacion, time_t& ultimaHora) const;
     public:
         DetectorDeFraude();
-        void añadirTransaccion (Transaccion t);
+        void anadirTransaccion (Transaccion t);
         void printTransacciones() const;
         void eliminarTransaccion(int id);
         bool esTransaccionFrecuente(Nodo* raiz, const string& cuentaOrigen, time_t ultimaTransaccion) const;

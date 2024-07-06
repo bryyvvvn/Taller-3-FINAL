@@ -24,7 +24,7 @@ void DetectorDeFraude::insertar(Nodo*& nodo, Transaccion t){
 
 }
 
-void DetectorDeFraude::añadirTransaccion(Transaccion t) {
+void DetectorDeFraude::anadirTransaccion(Transaccion t) {
     insertar(raiz,t);
 }
 

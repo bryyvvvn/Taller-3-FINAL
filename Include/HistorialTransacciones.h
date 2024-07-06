@@ -26,7 +26,7 @@ class HistorialTransacciones{
 
     public:
         HistorialTransacciones();
-        void añadirTransaccion(Transaccion t);
+        void anadirTransaccion(Transaccion t);
         Transaccion* getTransaccion(int id) const;
         void printTransacciones() const;
         vector<Transaccion> obtenerTransacciones()const;
